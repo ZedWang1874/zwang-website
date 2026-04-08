@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About — Zedong Wang">
+  <div class="max-w-4xl mx-auto px-6 pt-16 pb-20">
+    <h1 class="text-3xl font-semibold text-neutral-900 dark:text-neutral-100 mb-4">About</h1>
+
+    <!-- Intro -->
+    <section class="mb-12">
+      <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed mb-4 max-w-2xl">
+        I'm Zedong — a frontend engineer based in California. I build high-traffic web applications
+        with React, TypeScript, and GraphQL. For the past four years I've worked on e-commerce platforms
+        at Walmart and Sam's Club, shipping features used by millions of customers.
+      </p>
+      <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+        I care about writing clean, maintainable code and creating interfaces that feel right. Lately
+        I've been exploring the intersection of AI and frontend tooling — figuring out where it's
+        genuinely useful and where it's just hype.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="mb-12">
+      <h2 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-4">Skills</h2>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-sm font-medium text-neutral-900 dark:text-neutral-200 mb-2">Languages</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">TypeScript, JavaScript, Python, C/C++</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-medium text-neutral-900 dark:text-neutral-200 mb-2">Frameworks & Libraries</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">React, Redux, Node.js, Express, GraphQL, Astro</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-medium text-neutral-900 dark:text-neutral-200 mb-2">Tools & Infrastructure</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">AWS, Jenkins, Git, Webpack, Babel, CI/CD, Kubernetes</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-medium text-neutral-900 dark:text-neutral-200 mb-2">Testing</h3>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">Jest, React Testing Library, Enzyme, Istanbul</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="mb-12">
+      <h2 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-4">Education</h2>
+      <div>
+        <p class="font-medium text-neutral-900 dark:text-neutral-100">Syracuse University</p>
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">M.S. Computer Science — 2019 – 2021</p>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="rounded-xl border border-neutral-200 dark:border-neutral-800 p-8">
+      <h2 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-3">Get in touch</h2>
+      <p class="text-neutral-500 dark:text-neutral-400 leading-relaxed mb-5 max-w-2xl">
+        Open to interesting projects and conversations. Feel free to reach out.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a
+          href="mailto:hello@zwang.io"
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] hover:underline underline-offset-4"
+        >
+          hello@zwang.io
+        </a>
+        <a
+          href="https://github.com/ZedWang1874"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-neutral-500 dark:text-neutral-400 hover:text-[var(--color-accent)] transition-colors"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/zedong-wang-760397192/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-neutral-500 dark:text-neutral-400 hover:text-[var(--color-accent)] transition-colors"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

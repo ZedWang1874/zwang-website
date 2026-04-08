@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects } from '../data/projects';
+---
+
+<BaseLayout title="Projects — Zedong Wang">
+  <div class="max-w-4xl mx-auto px-6 pt-16 pb-20">
+    <h1 class="text-3xl font-semibold text-neutral-900 dark:text-neutral-100 mb-8">Projects</h1>
+    <div class="grid sm:grid-cols-2 gap-4">
+      {projects.map((project) => (
+        <ProjectCard {...project} />
+      ))}
+    </div>
+  </div>
+</BaseLayout>
